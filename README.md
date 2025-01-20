@@ -15,7 +15,6 @@ Tools • Dart 3.6.1 • DevTools 2.40.2
 - Flutter
 - Dart
 - Provider state management
-- Provider design pattern
 
 ## Getting Started
 
