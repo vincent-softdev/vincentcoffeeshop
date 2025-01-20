@@ -25,7 +25,9 @@ flutter run
 
 # Screen
 1. Landing
+
 ![Screenshot 2025-01-21 at 9 54 02 am](https://github.com/user-attachments/assets/e9fd4a17-5698-4f25-8783-333c930a6b71)
 
 2. Home
+
 ![Screenshot 2025-01-21 at 9 54 15 am](https://github.com/user-attachments/assets/1fb01a78-2329-4a4e-be4f-79ea84ed98fb)
