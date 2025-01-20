@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:vincentcoffeeshop/screens/home_screen.dart';
+import 'package:vincentcoffeeshop/screens/main_screen.dart';
 import '../providers/navigation_provider.dart';
 
 class LandingScreen extends StatelessWidget {
@@ -95,7 +95,7 @@ class LandingScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomeScreen(),
+                      builder: (context) => MainScreen(),
                     ),
                   );
                 },

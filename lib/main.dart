@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:vincentcoffeeshop/providers/bottom_nav_provider.dart';
 import 'package:vincentcoffeeshop/screens/landing_screen.dart';
 import 'package:vincentcoffeeshop/screens/welcome_screen.dart';
 import 'package:vincentcoffeeshop/providers/navigation_provider.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => NavigationProvider()),
+        ChangeNotifierProvider(create: (_) => BottomNavProvider()),
         ChangeNotifierProvider(
             create: (_) => ProductProvider()..fetchProducts()),
       ],
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(primarySwatch: Colors.blue),
         home: Consumer<NavigationProvider>(
           builder: (context, navigationProvider, _) {
-            // Navigate between WelcomeScreen, LandingScreen, and HomeScreen based on state
+            // Navigate between WelcomeScreen, LandingScreen, and MainScreen
             if (!navigationProvider.isWelcomeCompleted) {
               return WelcomeScreen();
             } else {
