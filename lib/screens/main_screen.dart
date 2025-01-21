@@ -14,13 +14,16 @@ class MainScreen extends StatelessWidget {
 
     // List of screens corresponding to the bottom navigation items
     final screens = [
-      HomeScreen(),
-      ProfileScreen(),
+      HomeScreen(), // Index 0: Home
+      ProfileScreen(), // Index 1: Profile
     ];
 
     return Scaffold(
-      body: screens[navProvider.currentIndex], // Display selected screen
-      bottomNavigationBar: CustomBottomNav(), // Custom bottom navigation
+      body: IndexedStack(
+        index: navProvider.currentIndex, // Show the selected screen
+        children: screens,
+      ),
+      bottomNavigationBar: const CustomBottomNav(), // Custom bottom navigation
     );
   }
 }
